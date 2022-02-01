@@ -9,8 +9,18 @@ function App() {
       <header className="App-header">
         Nested Lists
       </header>
+      <p>Expected:</p>
+      <ul>
+        <li>Fee</li>
+        <li>Fi
+          <ul>
+            <li>Fo</li>
+            <li>Fum</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Actual:</p>
         <MuiMarkdown>{`
-Start
 * Fee
 * Fi
   * Fo
